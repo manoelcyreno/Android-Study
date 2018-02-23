@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:id="@+id/primary_items" android:checkableBehavior="single">
+        <item
+            android:id="@+id/pagehome"
+            android:icon="@drawable/ic_action_home"
+            android:checked="true"
+            android:title="@string/pageTitleHome"/>
+        <item
+            android:id="@+id/pageump"
+            android:icon="@drawable/ic_ump"
+            android:title="@string/pageTitleUMP"/>
+        <item
+            android:id="@+id/pageuph"
+            android:icon="@drawable/ic_uph"
+            android:title="@string/pageTitleUPH"/>
+        <item
+            android:id="@+id/pagesaf"
+            android:icon="@drawable/ic_saf"
+            android:title="@string/pageTitleSAF"/>
+    </group>
+</menu>
