@@ -1,26 +1,28 @@
 <resources>
-    <string name="app_name">IPBAL Events</string>
+    <string name="app_name">Programação IPAL</string>
 
-    <string name="church">IPBAL</string>
+    <string name="church">IPAL</string>
     <string name="church_site">https://ipbal.wordpress.com/inicio/</string>
 
-    <string name="pageTitleHome">IPBAL Próximos Eventos</string>
+    <string name="pageTitleHome">IPAL Página Inicial</string>
     <string name="pageTitleUMP">Programação da UMP</string>
     <string name="pageTitleUPH">Programação da UPH</string>
     <string name="pageTitleSAF">Programação da SAF</string>
+    <string name="pageTitleSobre">Informações do aplicativo</string>
 
     <string name="pageBodyHome">
-        Acompanhe a agenda de eventos de nossa igreja, exibidos de forma trimestral.\n
+        Bem vindo(a) ao aplicativo da IPAL para consultar a programação de nossas sociedades.\n
         \n
-        FEVEREIRO\n
-        <b>[UMP]</b> 17 – Evangelismo no Sinal + Cinemada\n
+        Onde você pode nos encontrar:\n
+        https://ipbal.wordpress.com/inicio\n
+        http://fb.com/ipbarthurlundgren\n
+        https://www.instagram.com/ipbarthurlundgren\n
         \n
-        MARÇO\n
-        <b>[UMP]</b> 10 – Acústico UMP + Sorvetada\n
+        Você pode entrar em contato pelo email: ipbarthurlundgren@gmail.com\n
         \n
-        ABRIL\n
-        <b>[UMP]</b> 01 – Peça da Páscoa\n
-        <b>[UMP]</b> 14 – Estudo Direcionado\n
+        Você pode nos visitar no endereço: R. Dr. José Mariano, 12-138 - Artur Lundgren I, Paulista - PE, 53417-350\n
+        \n
+        Você pode entrar em contato pelo número: (81) 98959-7464
     </string>
 
     <string name="pageBodyUMP">
@@ -64,10 +66,18 @@
         24 – Palestra: Tema a Definir\n
         \n
         Dezembro\n
-        08 – Confraternização do Semestre\n
+        08 – Confraternização do Semestre
     </string>
 
     <string name="pageBodyUPH">Calendário a ser definido</string>
 
     <string name="pageBodySAF">Calendário a ser definido</string>
+
+    <string name="pageBodySobre">
+        Obrigado por usar nosso aplicativo para saber as informações sobre a programação de nossa igreja e de nossas sociedades.\n
+        \n
+        Versão: 1.1.0\n
+        Desenvolvido pela Equipe de Multimidia da IPAL
+    </string>
+
 </resources>

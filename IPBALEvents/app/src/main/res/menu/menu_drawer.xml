@@ -18,5 +18,9 @@
             android:id="@+id/pagesaf"
             android:icon="@drawable/ic_saf"
             android:title="@string/pageTitleSAF"/>
+        <item
+            android:id="@+id/pagesobre"
+            android:icon="@drawable/ic_sobre"
+            android:title="@string/pageTitleSobre"/>
     </group>
 </menu>

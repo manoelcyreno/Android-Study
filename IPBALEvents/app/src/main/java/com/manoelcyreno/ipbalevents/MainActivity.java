@@ -140,6 +140,10 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 fragment = new PageSAF();
                 break;
 
+            case R.id.pagesobre:
+                fragment = new PageSobre();
+                break;
+
             default:
                 break;
         }
