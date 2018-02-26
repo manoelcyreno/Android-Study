@@ -2,16 +2,17 @@
     <string name="app_name">Programação IPAL</string>
 
     <string name="church">IPAL</string>
-    <string name="church_site">https://ipbal.wordpress.com/inicio/</string>
+    <string name="church_site">Igreja Presbiteriana do Brasil em Arthur Lundgren 1</string>
 
     <string name="pageTitleHome">IPAL Página Inicial</string>
+    <string name="pageTitleIpalSemanal">Programação Semanal da IPAL</string>
     <string name="pageTitleUMP">Programação da UMP</string>
     <string name="pageTitleUPH">Programação da UPH</string>
     <string name="pageTitleSAF">Programação da SAF</string>
     <string name="pageTitleSobre">Informações do aplicativo</string>
 
     <string name="pageBodyHome">
-        Bem vindo(a) ao aplicativo da IPAL para consultar a programação de nossas sociedades.\n
+        Bem vindo(a) ao aplicativo da IPAL para consultar a programação de nossa igreja e nossas sociedades para o ano de 2018.\n
         \n
         Onde você pode nos encontrar:\n
         https://ipbal.wordpress.com/inicio\n
@@ -23,6 +24,20 @@
         Você pode nos visitar no endereço: R. Dr. José Mariano, 12-138 - Artur Lundgren I, Paulista - PE, 53417-350\n
         \n
         Você pode entrar em contato pelo número: (81) 98959-7464
+    </string>
+
+    <string name="pageBodyIpalSemanal">
+        Horário dos Cultos\n
+        \n
+        Quarta-Feira:\n
+        19:30 – Culto de Oração\n
+        \n
+        Quinta-Feira:\n
+        19:30 – Culto de Doutrina\n
+        \n
+        Domingo:\n
+        09:00 – Escola Bíblica Dominical\n
+        18:00 – Culto de Adoração
     </string>
 
     <string name="pageBodyUMP">

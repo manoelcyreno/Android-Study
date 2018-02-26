@@ -7,6 +7,10 @@
             android:checked="true"
             android:title="@string/pageTitleHome"/>
         <item
+            android:id="@+id/pageipalsemanal"
+            android:icon="@drawable/ic_ipalsemanal"
+            android:title="@string/pageTitleIpalSemanal"/>
+        <item
             android:id="@+id/pageump"
             android:icon="@drawable/ic_ump"
             android:title="@string/pageTitleUMP"/>

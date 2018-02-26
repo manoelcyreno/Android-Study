@@ -128,6 +128,10 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 fragment = new PageHome();
                 break;
 
+            case R.id.pageipalsemanal:
+                fragment = new PageIpalSemanal();
+                break;
+
             case R.id.pageump:
                 fragment = new PageUMP();
                 break;
