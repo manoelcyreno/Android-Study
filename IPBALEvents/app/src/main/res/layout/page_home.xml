@@ -23,6 +23,6 @@
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
             android:text="@string/pageBodyHome"
-            android:textSize="14sp"/>
+            android:textSize="14sp" />
     </LinearLayout>
 </ScrollView>

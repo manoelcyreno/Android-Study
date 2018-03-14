@@ -7,33 +7,33 @@
 
     <ImageView
         android:id="@+id/background"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:alpha="0.6"
         android:contentDescription="@string/app_name"
-        android:scaleType="centerCrop"/>
+        android:scaleType="centerCrop" />
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:orientation="vertical"
         android:layout_height="match_parent"
         android:gravity="bottom"
+        android:orientation="vertical"
         android:padding="@dimen/activity_horizontal_margin">
 
         <RelativeLayout
             android:layout_width="wrap_content"
-            android:layout_marginBottom="20dp"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp">
 
             <ImageView
                 android:id="@+id/user_photo"
-                android:layout_width="70dp"
-                android:layout_height="70dp"
+                android:layout_width="140dp"
+                android:layout_height="100dp"
                 android:layout_centerHorizontal="true"
                 android:layout_centerVertical="true"
-                android:src="@drawable/avatar"
                 android:contentDescription="@string/app_name"
-                android:scaleType="centerCrop" />
+                android:scaleType="centerCrop"
+                android:src="@drawable/avatar" />
         </RelativeLayout>
 
         <TextView
@@ -42,13 +42,13 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="2dp"
             android:textColor="@android:color/white"
-            android:textStyle="bold"/>
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/churchsite"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColor="@android:color/white"
-            android:textSize="12sp"/>
+            android:textSize="12sp" />
     </LinearLayout>
 </RelativeLayout>

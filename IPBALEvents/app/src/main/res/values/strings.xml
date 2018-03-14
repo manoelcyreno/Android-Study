@@ -1,18 +1,18 @@
 <resources>
-    <string name="app_name">Programação IPAL</string>
+    <string name="app_name">Programação IPBAL</string>
 
-    <string name="church">IPAL</string>
+    <string name="church">IPBAL</string>
     <string name="church_site">Igreja Presbiteriana do Brasil em Arthur Lundgren 1</string>
 
-    <string name="pageTitleHome">IPAL Página Inicial</string>
-    <string name="pageTitleIpalSemanal">Programação Semanal da IPAL</string>
+    <string name="pageTitleHome">IPBAL Página Inicial</string>
+    <string name="pageTitleIpalSemanal">Programação Semanal da IPBAL</string>
     <string name="pageTitleUMP">Programação da UMP</string>
     <string name="pageTitleUPH">Programação da UPH</string>
     <string name="pageTitleSAF">Programação da SAF</string>
     <string name="pageTitleSobre">Informações do aplicativo</string>
 
     <string name="pageBodyHome">
-        Bem vindo(a) ao aplicativo da IPAL para consultar a programação de nossa igreja e nossas sociedades para o ano de 2018.\n
+        Bem vindo(a) ao aplicativo da IPBAL para consultar a programação de nossa igreja e nossas sociedades para o ano de 2018.\n
         \n
         Onde você pode nos encontrar:\n
         https://ipbal.wordpress.com/inicio\n
@@ -22,8 +22,13 @@
         Você pode entrar em contato pelo email: ipbarthurlundgren@gmail.com\n
         \n
         Você pode nos visitar no endereço: R. Dr. José Mariano, 12-138 - Artur Lundgren I, Paulista - PE, 53417-350\n
+        Nos encontre pelo Google Maps: https://goo.gl/maps/YVNAVz5op4m\n
         \n
-        Você pode entrar em contato pelo número: (81) 98959-7464
+        Você pode entrar em contato pelo número: (81) 98471-6542
+    </string>
+
+    <string name="pageButtonHome">
+        Atualize seu calendário com nossas programações
     </string>
 
     <string name="pageBodyIpalSemanal">
@@ -91,8 +96,8 @@
     <string name="pageBodySobre">
         Obrigado por usar nosso aplicativo para saber as informações sobre a programação de nossa igreja e de nossas sociedades.\n
         \n
-        Versão: 1.1.0\n
-        Desenvolvido pela Equipe de Multimidia da IPAL
+        Versão: 1.3.0\n
+        Desenvolvido pela Equipe de Multimidia da IPBAL
     </string>
 
 </resources>
