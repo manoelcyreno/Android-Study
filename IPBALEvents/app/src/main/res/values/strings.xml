@@ -6,6 +6,7 @@
 
     <string name="pageTitleHome">IPBAL Página Inicial</string>
     <string name="pageTitleIpalSemanal">Programação Semanal da IPBAL</string>
+    <string name="pageTitleIpalAnual">Programação da IPBAL Anual</string>
     <string name="pageTitleUMP">Programação da UMP</string>
     <string name="pageTitleUPH">Programação da UPH</string>
     <string name="pageTitleSAF">Programação da SAF</string>
@@ -27,10 +28,6 @@
         Você pode entrar em contato pelo número: (81) 98471-6542
     </string>
 
-    <string name="pageButtonHome">
-        Atualize seu calendário com nossas programações
-    </string>
-
     <string name="pageBodyIpalSemanal">
         Horário dos Cultos\n
         \n
@@ -40,9 +37,76 @@
         Quinta-Feira:\n
         19:30 – Culto de Doutrina\n
         \n
+        Sábado:\n
+        3º sábado do mês - 14:30 – Tarde de Evangelização\n
+        \n
         Domingo:\n
         09:00 – Escola Bíblica Dominical\n
         18:00 – Culto de Adoração
+    </string>
+
+    <string name="pageBodyIpalAnual">
+        Janeiro\n
+        01 a 08 - Semana Universal de Oração\n
+        01 - Dia Mundial da Paz\n
+        07 - Dia da liberdade de cultos\n
+        21 - Dia Mundial da Religião\n
+        \n
+        Fevereiro\n
+        04 - Dia do Homem Presbiteriano\n
+        11 - Dia da Mulher Presbiteriana\n
+        \n
+        Março\n
+        05 - Dia Mundial da Oração\n
+        10 - Primeiro culto protestante no Brasil\n
+        11 - Dia da educação cristã\n
+        27 - Dia da Casa Editora Presbiteriana\n
+        \n
+        Abril\n
+        02 - Paixão de Cristo\n
+        04 – Páscoa\n
+        \n
+        Maio\n
+        2º domingo - Dia das Mães\n
+        3º domingo - Dia Nacional do Jovem Presbiteriano\n
+        \n
+        Junho\n
+        08 - Aniversário do Jornal Brasil Presbiteriano\n
+        12 - Instalada a Sociedade Bíblica no Brasil\n
+        \n
+        Julho\n
+        1 à 31 - Mês dos pastores jubilados e viúvas de pastores\n
+        09 - Dia do Diácono\n
+        4º domingo - Dia Nacional do Adolescente Presbiteriano\n
+        \n
+        Agosto\n
+        05 - Dia do Presbítero\n
+        12 - Dia do Presbiterianismo Nacional e Dia das Missões\n
+        2º domingo - Dia dos pais\n
+        \n
+        Setembro\n
+        08 - Dia dos seminários e seminaristas\n
+        3º domingo - Dia da Escola Dominical\n
+        \n
+        Outubro\n
+        01 - Dia Nacional e internacional do Idoso\n
+        11 - Dia da SAF em Revista\n
+        12 - Dia das crianças e dia nacional da criança presbiteriana\n
+        31 - Dia da Reforma Protestante\n
+        \n
+        Novembro\n
+        01 - Dia do Evangélico\n
+        05 - Circula pela primeira vez o Imprensa Evangélica, primeiro jornal religioso do País\n
+        11 - Dia Nacional da SAF\n
+        15 - Dia da proclamação da República\n
+        22 - Dia Nacional de Ações de Graças\n
+        30 - Dia do Teólogo\n
+        \n
+        Dezembro\n
+        08 - Dia Nacional da Família\n
+        2º domingo - Dia da Bíblia e da Mulher de Pastor\n
+        17 - Dia do Pastor\n
+        25 - Natal\n
     </string>
 
     <string name="pageBodyUMP">
@@ -89,14 +153,44 @@
         08 – Confraternização do Semestre
     </string>
 
-    <string name="pageBodyUPH">Calendário a ser definido</string>
+    <string name="pageBodyUPH">
+        Janeiro\n
+        02 - Semana Universal de Oração com a direção da UPH\n
+        \n
+        Fevereiro\n
+        18 - Comemorar o dia da mulher presbiteriana\n
+        \n
+        Março\n
+        11 - Comemorar o dia internacional da mulher\n
+        18 - Comemorar o aniversário da igreja e do grupo mensageiros de Cristo\n
+        23 - Reunião Plenária da UPH, às 19:30\n
+        \n
+        Abril\n
+        15 - Comemorar o aniversário do pastor\n
+        \n
+        Maio\n
+        20 - Comemorar o dia da mocidade\n
+        21 até 25 - Semana de oração pela família\n
+        \n
+        Junho\n
+        30 - Reunião Plenária da UPH, às 19\n
+        \n
+        Julho\n
+        15 - Comemorar dia do diácono\n
+        \n
+        Agosto\n
+        25 - Intercâmbio com a UPH da 1ª. IPB de Paulista\n
+        \n
+        Outubro\n
+        19 - Reunião extraordinária da UPH, para eleição da nova diretoria
+    </string>
 
     <string name="pageBodySAF">Calendário a ser definido</string>
 
     <string name="pageBodySobre">
         Obrigado por usar nosso aplicativo para saber as informações sobre a programação de nossa igreja e de nossas sociedades.\n
         \n
-        Versão: 1.3.0\n
+        Versão: 1.4.0\n
         Desenvolvido pela Equipe de Multimidia da IPBAL
     </string>
 

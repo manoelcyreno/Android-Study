@@ -42,10 +42,12 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         initNavigationDrawer();
         initNavigationDrawerHeader();
         initDrawerListener(savedInstanceState);
-        getNextEvent();
+        getNextEventIPBAL();
+        getNextEventUPH();
+        getNextEventUMP();
     }
 
-    private void getNextEvent()
+    private void getNextEventUMP()
     {
         List<String> eventDates = Arrays.asList("01.20", "02.17", "03.10", "04.01", "04.14", "05.12", "05.13", "06.09",
                 "07.14", "07.28", "08.11", "08.12", "09.22", "10.14", "10.27", "11.10", "11.24", "12.08");
@@ -65,14 +67,79 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 String preFormatedDate = eventDates.get(i).toString();
                 String monthEvent = preFormatedDate.substring(0, 2);
                 String dayEvent = preFormatedDate.substring(3, 5);
-                sendNotification(dayEvent, monthEvent, eventTopics.get(i).toString());
+                sendNotification(dayEvent, monthEvent, eventTopics.get(i).toString(), "UMP", 10003);
                 break;
             }
         }
-
     }
 
-    private void sendNotification(String dayEvent, String monthEvent, String eventName)
+    private void getNextEventUPH()
+    {
+        List<String> eventDates = Arrays.asList("01.02", "02.18", "03.11", "03.18", "03.23", "04.15", "05.20", "05.21",
+                "05.25", "06.30", "07.15", "08.25", "10.19");
+        List<String> eventTopics = Arrays.asList("Semana Universal de Oração com a direção da UPH",
+                "Comemorar o dia da mulher presbiteriana", "Comemorar o dia internacional da mulher",
+                "Comemorar o aniversário da igreja e do grupo mensageiros de Cristo",
+                "Reunião Plenária da UPH, às 19:30", "Comemorar o aniversário do pastor", "Comemorar o dia da mocidade",
+                "Inicio da semana de oração pela família", "Fim da semana de oração pela família",
+                "Reunião Plenária da UPH, às 19", "Comemorar dia do diácono",
+                "Intercâmbio com a UPH da 1ª. IPB de Paulista",
+                "Reunião extraordinária da UPH, para eleição da nova diretoria");
+
+        Date currentDate = new Date();
+        SimpleDateFormat formatDate = new SimpleDateFormat("MM.dd");
+        double currentDateFormated = Double.parseDouble(formatDate.format(currentDate));
+
+        for (int i = 0; i < eventDates.size(); i++) {
+            if (currentDateFormated <= Double.parseDouble(eventDates.get(i).toString())) {
+                String preFormatedDate = eventDates.get(i).toString();
+                String monthEvent = preFormatedDate.substring(0, 2);
+                String dayEvent = preFormatedDate.substring(3, 5);
+                sendNotification(dayEvent, monthEvent, eventTopics.get(i).toString(), "UPH", 10002);
+                break;
+            }
+        }
+    }
+
+    private void getNextEventIPBAL()
+    {
+        List<String> eventDates = Arrays.asList("01.01", "01.08", "01.07", "01.21", "02.04", "02.11", "03.05", "03.10",
+                "03.11", "03.27", "04.02", "04.04", "05.13", "05.20", "06.08", "06.12", "07.01", "07.09", "07.22",
+                "07.31", "08.05", "08.12", "09.08", "09.16", "10.01", "10.11", "10.12", "10.31", "11.01", "11.05",
+                "11.11", "11.15", "11.22", "11.30", "12.08", "12.09", "12.17", "12.25");
+        List<String> eventTopics = Arrays.asList("Dia Mundial da Paz e Inicio da Semana Universal de Oração",
+                "Fim da Semana Universal de Oração", "Dia da liberdade de cultos", "Dia Mundial da Religião",
+                "Dia do Homem Presbiteriano", "Dia da Mulher Presbiteriana", "Dia Mundial da Oração",
+                "Primeiro culto protestante no Brasil", "Dia da educação cristã", "Dia da Casa Editora Presbiteriana",
+                "Paixão de Cristo", "Páscoa", "Dia das Mães", "Dia Nacional do Jovem Presbiteriano",
+                "Aniversário do Jornal Brasil Presbiteriano", "Instalada a Sociedade Bíblica no Brasil",
+                "Inicio do Mês dos pastores jubilados e viúvas de pastores", "Dia do Diácono",
+                "Dia Nacional do Adolescente Presbiteriano", "Fim do Mês dos pastores jubilados e viúvas de pastores",
+                "Dia do Presbítero", "Dia do Presbiterianismo Nacional, Dia das Missões e Dia dos pais",
+                "Dia dos seminários e seminaristas", "Dia da Escola Dominical", "Dia Nacional e internacional do Idoso",
+                "Dia da SAF em Revista", "Dia das crianças e dia nacional da criança presbiteriana",
+                "Dia da Reforma Protestante", "Dia do Evangélico",
+                "Circula pela primeira vez o Imprensa Evangélica, primeiro jornal religioso do País",
+                "Dia Nacional da SAF", "Dia da proclamação da República", "Dia Nacional de Ações de Graças",
+                "Dia do Teólogo", "Dia Nacional da Família", "Dia da Bíblia e da Mulher de Pastor", "Dia do Pastor",
+                "Natal");
+
+        Date currentDate = new Date();
+        SimpleDateFormat formatDate = new SimpleDateFormat("MM.dd");
+        double currentDateFormated = Double.parseDouble(formatDate.format(currentDate));
+
+        for (int i = 0; i < eventDates.size(); i++) {
+            if (currentDateFormated <= Double.parseDouble(eventDates.get(i).toString())) {
+                String preFormatedDate = eventDates.get(i).toString();
+                String monthEvent = preFormatedDate.substring(0, 2);
+                String dayEvent = preFormatedDate.substring(3, 5);
+                sendNotification(dayEvent, monthEvent, eventTopics.get(i).toString(), "IPBAL", 10001);
+                break;
+            }
+        }
+    }
+
+    private void sendNotification(String dayEvent, String monthEvent, String eventName, String society, int ID)
     {
         NotificationCompat.Builder mBuilder = new NotificationCompat.Builder(this);
 
@@ -81,11 +148,11 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
         mBuilder.setContentIntent(pendingIntent);
         mBuilder.setSmallIcon(R.drawable.ic_event);
-        mBuilder.setContentTitle("Próxima Programação da IPBAL");
-        mBuilder.setContentText(dayEvent + "/" + monthEvent + " - " + eventName);
+        mBuilder.setContentTitle("Próxima Programação");
+        mBuilder.setContentText(dayEvent + "/" + monthEvent + " - " + society + " - " + eventName);
 
         NotificationManager mNotificationManager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
-        mNotificationManager.notify(10001, mBuilder.build());
+        mNotificationManager.notify(ID, mBuilder.build());
     }
 
     private void initNavigationDrawer()
@@ -184,6 +251,10 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
             case R.id.pageipalsemanal:
                 fragment = new PageIpalSemanal();
+                break;
+
+            case R.id.pageipalanual:
+                fragment = new PageIpalAnual();
                 break;
 
             case R.id.pageump:

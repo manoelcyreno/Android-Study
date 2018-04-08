@@ -11,6 +11,11 @@
             android:icon="@drawable/ic_ipalsemanal"
             android:title="@string/pageTitleIpalSemanal"/>
         <item
+            android:id="@+id/pageipalanual"
+            android:icon="@drawable/ic_action_home"
+            android:checked="true"
+            android:title="@string/pageTitleIpalAnual"/>
+        <item
             android:id="@+id/pageump"
             android:icon="@drawable/ic_ump"
             android:title="@string/pageTitleUMP"/>
