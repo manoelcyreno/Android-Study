@@ -45,60 +45,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         getNextEventIPBAL();
         getNextEventUPH();
         getNextEventUMP();
-    }
-
-    private void getNextEventUMP()
-    {
-        List<String> eventDates = Arrays.asList("01.20", "02.17", "03.10", "04.01", "04.14", "05.12", "05.13", "06.09",
-                "07.14", "07.28", "08.11", "08.12", "09.22", "10.14", "10.27", "11.10", "11.24", "12.08");
-        List<String> eventTopics = Arrays.asList("Palestra: “Memorizando os Salmos” (em CAETÉS 1)",
-                "Evangelismo no Sinal + Cinemada", "Acústico UMP + Sorvetada", "Peça da Páscoa", "Estudo Direcionado",
-                "Dia de Lazer", "Homenagem às Mães", "Jantar dos Namorados", "Sopão", "Confraternização do Semestre",
-                "Roda Viva", "Homenagem aos Pais", "Culto de Gratidão da UMP", "EBD das Crianças",
-                "Visita a Instituição de Crianças", "Eleição UMP", "Palestra: Tema a Definir",
-                "Confraternização do Semestre");
-
-        Date currentDate = new Date();
-        SimpleDateFormat formatDate = new SimpleDateFormat("MM.dd");
-        double currentDateFormated = Double.parseDouble(formatDate.format(currentDate));
-
-        for (int i = 0; i < eventDates.size(); i++) {
-            if (currentDateFormated <= Double.parseDouble(eventDates.get(i).toString())) {
-                String preFormatedDate = eventDates.get(i).toString();
-                String monthEvent = preFormatedDate.substring(0, 2);
-                String dayEvent = preFormatedDate.substring(3, 5);
-                sendNotification(dayEvent, monthEvent, eventTopics.get(i).toString(), "UMP", 10003);
-                break;
-            }
-        }
-    }
-
-    private void getNextEventUPH()
-    {
-        List<String> eventDates = Arrays.asList("01.02", "02.18", "03.11", "03.18", "03.23", "04.15", "05.20", "05.21",
-                "05.25", "06.30", "07.15", "08.25", "10.19");
-        List<String> eventTopics = Arrays.asList("Semana Universal de Oração com a direção da UPH",
-                "Comemorar o dia da mulher presbiteriana", "Comemorar o dia internacional da mulher",
-                "Comemorar o aniversário da igreja e do grupo mensageiros de Cristo",
-                "Reunião Plenária da UPH, às 19:30", "Comemorar o aniversário do pastor", "Comemorar o dia da mocidade",
-                "Inicio da semana de oração pela família", "Fim da semana de oração pela família",
-                "Reunião Plenária da UPH, às 19", "Comemorar dia do diácono",
-                "Intercâmbio com a UPH da 1ª. IPB de Paulista",
-                "Reunião extraordinária da UPH, para eleição da nova diretoria");
-
-        Date currentDate = new Date();
-        SimpleDateFormat formatDate = new SimpleDateFormat("MM.dd");
-        double currentDateFormated = Double.parseDouble(formatDate.format(currentDate));
-
-        for (int i = 0; i < eventDates.size(); i++) {
-            if (currentDateFormated <= Double.parseDouble(eventDates.get(i).toString())) {
-                String preFormatedDate = eventDates.get(i).toString();
-                String monthEvent = preFormatedDate.substring(0, 2);
-                String dayEvent = preFormatedDate.substring(3, 5);
-                sendNotification(dayEvent, monthEvent, eventTopics.get(i).toString(), "UPH", 10002);
-                break;
-            }
-        }
+        getNextEventSAF();
     }
 
     private void getNextEventIPBAL()
@@ -134,6 +81,95 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 String monthEvent = preFormatedDate.substring(0, 2);
                 String dayEvent = preFormatedDate.substring(3, 5);
                 sendNotification(dayEvent, monthEvent, eventTopics.get(i).toString(), "IPBAL", 10001);
+                break;
+            }
+        }
+    }
+
+    private void getNextEventUPH()
+    {
+        List<String> eventDates = Arrays.asList("01.02", "02.18", "03.11", "03.18", "03.23", "04.15", "05.20", "05.21",
+                "05.25", "06.30", "07.15", "08.25", "10.19");
+        List<String> eventTopics = Arrays.asList("Semana Universal de Oração com a direção da UPH",
+                "Comemorar o dia da mulher presbiteriana", "Comemorar o dia internacional da mulher",
+                "Comemorar o aniversário da igreja e do grupo mensageiros de Cristo",
+                "Reunião Plenária da UPH, às 19:30", "Comemorar o aniversário do pastor", "Comemorar o dia da mocidade",
+                "Inicio da semana de oração pela família", "Fim da semana de oração pela família",
+                "Reunião Plenária da UPH, às 19", "Comemorar dia do diácono",
+                "Intercâmbio com a UPH da 1ª. IPB de Paulista",
+                "Reunião extraordinária da UPH, para eleição da nova diretoria");
+
+        Date currentDate = new Date();
+        SimpleDateFormat formatDate = new SimpleDateFormat("MM.dd");
+        double currentDateFormated = Double.parseDouble(formatDate.format(currentDate));
+
+        for (int i = 0; i < eventDates.size(); i++) {
+            if (currentDateFormated <= Double.parseDouble(eventDates.get(i).toString())) {
+                String preFormatedDate = eventDates.get(i).toString();
+                String monthEvent = preFormatedDate.substring(0, 2);
+                String dayEvent = preFormatedDate.substring(3, 5);
+                sendNotification(dayEvent, monthEvent, eventTopics.get(i).toString(), "UPH", 10002);
+                break;
+            }
+        }
+    }
+
+    private void getNextEventUMP()
+    {
+        List<String> eventDates = Arrays.asList("01.20", "02.17", "03.10", "04.01", "04.14", "05.12", "05.13", "06.09",
+                "07.14", "07.28", "08.11", "08.12", "09.22", "10.14", "10.27", "11.10", "11.24", "12.08");
+        List<String> eventTopics = Arrays.asList("Palestra: “Memorizando os Salmos” (em CAETÉS 1)",
+                "Evangelismo no Sinal + Cinemada", "Acústico UMP + Sorvetada", "Peça da Páscoa", "Estudo Direcionado",
+                "Dia de Lazer", "Homenagem às Mães", "Jantar dos Namorados", "Sopão", "Confraternização do Semestre",
+                "Roda Viva", "Homenagem aos Pais", "Culto de Gratidão da UMP", "EBD das Crianças",
+                "Visita a Instituição de Crianças", "Eleição UMP", "Palestra: Tema a Definir",
+                "Confraternização do Semestre");
+
+        Date currentDate = new Date();
+        SimpleDateFormat formatDate = new SimpleDateFormat("MM.dd");
+        double currentDateFormated = Double.parseDouble(formatDate.format(currentDate));
+
+        for (int i = 0; i < eventDates.size(); i++) {
+            if (currentDateFormated <= Double.parseDouble(eventDates.get(i).toString())) {
+                String preFormatedDate = eventDates.get(i).toString();
+                String monthEvent = preFormatedDate.substring(0, 2);
+                String dayEvent = preFormatedDate.substring(3, 5);
+                sendNotification(dayEvent, monthEvent, eventTopics.get(i).toString(), "UMP", 10003);
+                break;
+            }
+        }
+    }
+
+    private void getNextEventSAF()
+    {
+        List<String> eventDates = Arrays.asList("01.03", "01.13", "01.30", "02.03", "02.04", "02.05", "02.11", "03.02",
+                "03.05", "03.08", "03.24", "04.02", "04.14", "04.24", "04.28", "05.05", "05.07", "05.19", "06.02",
+                "06.04", "06.16", "06.26", "07.02", "07.07", "07.21", "07.31", "08.05", "08.06", "08.28", "09.03",
+                "09.25", "10.01", "10.30", "11.05", "11.10", "11.27");
+        List<String> eventTopics = Arrays.asList("Inicio da Semana Universal de Oração",
+                "Fim da Semana Universal de Oração", "Reunião departamental", "Culto de Jejum e Oração",
+                "Dia do Homem Presbiteriano", "Ensaio conjunto SAF", "Dia da mulher Presbiteriana",
+                "Dia de Oração das SAFs", "Ensaio conjunto SAF", "Dia da mulher", "Vista da SAF", "Ensaio conjunto SAF",
+                "Aniversario do pastor", "Reunião Plenária", "Atividade da Sinodal cuidando da boa idade",
+                "Aniversário da SAF", "Ensaio conjunto SAF",
+                "Atividade Federação. Manhã de oração. Igreja de Jardim Paulista",
+                "Atividade da Sinodal. Inspirativa ( tarde cultural Colégio Agnes )", "Ensaio conjunto SAF",
+                "Evangelismo parque das Paineiras", "Reunião Plenária", "Ensaio conjunto SAF", "Gincana", "Gincana",
+                "Reunião Plenária", "Dia so Presbítero. (Jogral)", "Ensaio conjunto SAF", "Reunião Plenária",
+                "Ensaio conjunto SAF", "Reunião Plenária", "Ensaio conjunto SAF",
+                "Reunião Plenária e Eleição da nova diretória", "Ensaio conjunto SAF", "Congresso da Federação",
+                "Reunião Plenária");
+
+        Date currentDate = new Date();
+        SimpleDateFormat formatDate = new SimpleDateFormat("MM.dd");
+        double currentDateFormated = Double.parseDouble(formatDate.format(currentDate));
+
+        for (int i = 0; i < eventDates.size(); i++) {
+            if (currentDateFormated <= Double.parseDouble(eventDates.get(i).toString())) {
+                String preFormatedDate = eventDates.get(i).toString();
+                String monthEvent = preFormatedDate.substring(0, 2);
+                String dayEvent = preFormatedDate.substring(3, 5);
+                sendNotification(dayEvent, monthEvent, eventTopics.get(i).toString(), "SAF", 10004);
                 break;
             }
         }
