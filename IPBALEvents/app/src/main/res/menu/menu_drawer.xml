@@ -12,7 +12,7 @@
             android:title="@string/pageTitleIpalSemanal"/>
         <item
             android:id="@+id/pageipalanual"
-            android:icon="@drawable/ic_action_home"
+            android:icon="@drawable/ic_ipb"
             android:checked="true"
             android:title="@string/pageTitleIpalAnual"/>
         <item

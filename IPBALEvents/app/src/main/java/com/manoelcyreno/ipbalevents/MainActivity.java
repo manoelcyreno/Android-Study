@@ -80,7 +80,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 String preFormatedDate = eventDates.get(i).toString();
                 String monthEvent = preFormatedDate.substring(0, 2);
                 String dayEvent = preFormatedDate.substring(3, 5);
-                sendNotification(dayEvent, monthEvent, eventTopics.get(i).toString(), "IPBAL", 10001);
+                sendNotification(dayEvent, monthEvent, eventTopics.get(i).toString(), 10001, "Datas Comemorativas IPB");
                 break;
             }
         }
@@ -116,7 +116,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
     private void getNextEventUMP()
     {
-        List<String> eventDates = Arrays.asList("01.20", "02.17", "03.10", "04.01", "04.14", "05.12", "05.13", "06.09",
+        List<String> eventDates = Arrays.asList("01.20", "02.17", "03.10", "04.01", "04.14", "05.05", "05.13", "06.09",
                 "07.14", "07.28", "08.11", "08.12", "09.22", "10.14", "10.27", "11.10", "11.24", "12.08");
         List<String> eventTopics = Arrays.asList("Palestra: “Memorizando os Salmos” (em CAETÉS 1)",
                 "Evangelismo no Sinal + Cinemada", "Acústico UMP + Sorvetada", "Peça da Páscoa", "Estudo Direcionado",
@@ -190,6 +190,23 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         NotificationManager mNotificationManager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
         mNotificationManager.notify(ID, mBuilder.build());
     }
+
+    private void sendNotification(String dayEvent, String monthEvent, String eventName, int ID, String eventTitle)
+    {
+        NotificationCompat.Builder mBuilder = new NotificationCompat.Builder(this);
+
+        Intent intent = new Intent(this, ExecuteNotificationActivity.class);
+        PendingIntent pendingIntent = PendingIntent.getActivity(this, 0, intent, 0);
+
+        mBuilder.setContentIntent(pendingIntent);
+        mBuilder.setSmallIcon(R.drawable.ic_event);
+        mBuilder.setContentTitle(eventTitle);
+        mBuilder.setContentText(dayEvent + "/" + monthEvent + " - " + eventName);
+
+        NotificationManager mNotificationManager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
+        mNotificationManager.notify(ID, mBuilder.build());
+    }
+
 
     private void initNavigationDrawer()
     {

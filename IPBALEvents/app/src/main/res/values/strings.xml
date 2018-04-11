@@ -1,12 +1,12 @@
 <resources>
-    <string name="app_name">Programação IPBAL</string>
+    <string name="app_name">Agenda IPBAL</string>
 
     <string name="church">IPBAL</string>
     <string name="church_site">Igreja Presbiteriana do Brasil em Arthur Lundgren 1</string>
 
     <string name="pageTitleHome">IPBAL Página Inicial</string>
     <string name="pageTitleIpalSemanal">Programação Semanal da IPBAL</string>
-    <string name="pageTitleIpalAnual">Programação da IPBAL Anual</string>
+    <string name="pageTitleIpalAnual">Datas Comemorativas IPB</string>
     <string name="pageTitleUMP">Programação da UMP</string>
     <string name="pageTitleUPH">Programação da UPH</string>
     <string name="pageTitleSAF">Programação da SAF</string>
@@ -29,20 +29,30 @@
     </string>
 
     <string name="pageBodyIpalSemanal">
-        Horário dos Cultos\n
-        \n
-        Quarta-Feira:\n
-        19:30 – Culto de Oração\n
-        \n
-        Quinta-Feira:\n
-        19:30 – Culto de Doutrina\n
-        \n
-        Sábado:\n
-        3º sábado do mês - 14:30 – Tarde de Evangelização\n
+        Horário dos Cultos ou Atividades\n
         \n
         Domingo:\n
         09:00 – Escola Bíblica Dominical\n
-        18:00 – Culto de Adoração
+        18:00 – Culto de Adoração\n
+        \n
+        Terça–Feira:\n
+        19:30 - Ensaio do Coral\n
+        \n
+        Quarta-Feira:\n
+        19:00 – Acons. Pastoral\n
+        19:30 – Culto de Oração\n
+        \n
+        Quinta-Feira:\n
+        19:00 – Acons. Pastoral\n
+        19:30 – Culto de Doutrina\n
+        \n
+        Sexta–Feira:\n
+        19:30 - Culto no lar\n
+        \n
+        Sábado:\n
+        1º Sábado - 07:00 – Culto de Jejum e Oração\n
+        2º Sábado - 19:00 - Programação da UMP\n
+        3º Sábado - 14:30 – Evangelização
     </string>
 
     <string name="pageBodyIpalAnual">
@@ -124,7 +134,7 @@
         14 – Estudo Direcionado\n
         \n
         Maio\n
-        12 – Dia de Lazer\n
+        05 – Dia de Lazer\n
         13 – Homenagem às Mães\n
         \n
         Junho\n
@@ -173,7 +183,7 @@
         21 até 25 - Semana de oração pela família\n
         \n
         Junho\n
-        30 - Reunião Plenária da UPH, às 19\n
+        30 - Reunião Plenária da UPH, às 19:00\n
         \n
         Julho\n
         15 - Comemorar dia do diácono\n
@@ -187,94 +197,94 @@
 
     <string name="pageBodySAF">
         Janeiro\n
-        Semana de oração. ( Participação junto com a igreja) 03/01 à 13/01/18\n
-        Reunião departamental 30/01/18\n
+        03 à 13 - Semana de oração. (Participação junto com a igreja)\n
+        30 - Reunião departamental\n
         \n
         Fevereiro\n
-        Culto de Jejum e Oração. (primeiro sábado de cada mês).\n
-        Dia do Homem Presbiteriano. ( 04/02/18).\n
-        Dia da mulher Presbiteriana, (11/02/18) \n
-        Ensaio conjunto SAF. (primeira segunda feira de cada mês).\n
+        04 - Dia do Homem Presbiteriano.\n
+        11 - Dia da mulher Presbiteriana\n
+        1ª segunda-feira de cada mês - Ensaio conjunto SAF.\n
+        1º sábado de cada mês - Culto de Jejum e Oração.\n
         \n
         Março\n
-        Dia da mulher. (08/03/18)\n
-        Vista da SAF. ( 24/03/18)\n
-        Dia de Oração das SAFs. 1ª sexta  do mês. ( comemorado no culto de oração dirigido pela SAF).\n
+        08 - Dia da mulher.\n
+        24 - Vista da SAF.\n
+        1ª segunda-feira de cada mês - Ensaio conjunto SAF.\n
+        1ª sexta-feira do mês - Dia de Oração das SAFs. (Comemorado no culto de oração dirigido pela SAF).\n
         Aniversariantes do trimestre comemoração na departamental.\n
-        Ensaio conjunto SAF. (primeira segunda feira de cada mês).\n
         \n
         Abril\n
-        Visita da SAF. (segundo ou quarto sábado de cada mês).\n
-        Aniversario do pastor. ( 14/04/18).\n
-        Ensaio conjunto SAF. (primeira segunda feira de cada mês).\n
-        Atividade da Sinodal cuidando da boa idade. (Juntando as panelas) 28/04/18\n
-        Reunião Plenária.  Última terça do mês.\n
+        14 - Aniversario do pastor.\n
+        28 - Atividade da Sinodal cuidando da boa idade. (Juntando as panelas)\n
+        1ª segunda-feira de cada mês - Ensaio conjunto SAF.\n
+        Última terça-feira do mês - Reunião Plenária.\n
         Reunião Departamental.\n
         \n
         Maio\n
-        Aniversário da SAF.  (05/05/18).\n
-        Vista da SAF. (segundo ou quarto sábado de cada mês).\n
+        05 - Aniversário da SAF.\n
+        19 - Atividade Federação. Manhã de oração. - Igreja de Jardim Paulista.\n
+        1ª segunda-feira de cada mês - Ensaio conjunto SAF.\n
+        2º ou 4º sábado de cada mês - Visita da SAF.\n
+        Chá Evangelístico para as mães.  Dia das Mães.\n
+        Semana de Oração da Família. (atividade em conjunto com a igreja.)\n
         Reunião Plenária\n
         Reunião Departamental\n
-        Semana de Oração da Família. (atividade em conjunto com a igreja.)\n
-        Chá Evangelístico para as mães.  Dia das Mães.\n
-        Atividade Federação. Manhã de oração. 19/05/18 Igreja de Jardim Paulista.\n
-        Ensaio conjunto SAF. (primeira segunda feira de cada mês).\n
         \n
         Junho\n
-        Vista da SAF. ( segundo ou quarto sábado de cada mês). \n
-        Reunião Plenária. Última terça do mês.\n
+        02 - Atividade da Sinodal. Inspirativa (Tarde cultural Colégio Agnes).\n
+        16 - Evangelismo parque das Paineiras\n
+        1ª segunda-feira de cada mês - Ensaio conjunto SAF.\n
+        2º ou 4º sábado de cada mês - Visita da SAF.\n
+        Última terça-feira do mês - Reunião Plenária.\n
         Reunião Departamental. Aniversariantes do trimestre.\n
         Palestra para casais.\n
-        Atividade da Sinodal. Inspirativa ( tarde cultural Colégio Agnes 02/06/18).\n
-        Evangelismo parque das Paineiras.(16/06/18)\n
-        Ensaio conjunto SAF. (primeira segunda feira de cada mês).\n
         \n
         Julho\n
-        Vista da SAF.  (segundo ou quarto sábado de cada mês).\n
-        Reunião Plenária. Última terça do mês.\n
+        07 - Gincana.\n
+        21 - Gincana.\n
+        1ª segunda-feira de cada mês - Ensaio conjunto SAF.\n
+        2º ou 4º sábado de cada mês - Vista da SAF\n
+        Última terça-feira do mês - Reunião Plenária.\n
         Reunião Departamental\n
-        Gincana. 07/07 e 21/07.\n
-        Ensaio conjunto SAF. (primeira segunda feira de cada mês).\n
         \n
         Agosto\n
-        Vista da SAF. (segundo ou quarto sábado de cada mês).\n
-        Reunião Plenária. Última terça do mês.\n
-        Reunião Departamental\n
-        Dia so Presbítero. (05/08) Jogral\n
-        Dia dos pais. Atividade a combinar.\n
-        Trabalho sobre missões.\n
+        05 - Dia so Presbítero. Jogral\n
+        1ª segunda-feira de cada mês - Ensaio conjunto SAF.\n
+        2º ou 4º sábado de cada mês - Vista da SAF\n
+        Última terça-feira do mês - Reunião Plenária.\n
         Atividade da Sinodal. Evangelismo parque 13 de maio. 8h.\n
-        Ensaio conjunto SAF. (primeira segunda feira de cada mês).\n
+        Dia dos pais. Atividade a combinar.\n
+        Reunião Departamental\n
+        Trabalho sobre missões.\n
         \n
         Setembro\n
-        Vista da SAF. (segundo ou quarto sábado de cada mês).\n
-        Reunião Plenária. Última terça do mês.\n
+        1ª segunda-feira de cada mês - Ensaio conjunto SAF.\n
+        2º ou 4º sábado de cada mês - Vista da SAF\n
+        Última terça-feira do mês - Reunião Plenária.\n
         Reunião Departamental. Aniversariantes do trimestre.\n
         Comemoração da primavera.\n
-        Ensaio conjunto SAF. (primeira segunda feira de cada mês).\n
         \n
         Outubro\n
-        Vista da SAF. (segundo ou quarto sábado de cada mês).\n
-        Reunião Plenária. Última terça do mês.\n
+        30 - Eleição da nova diretória.\n
+        1ª segunda-feira de cada mês - Ensaio conjunto SAF.\n
+        2º ou 4º sábado de cada mês - Vista da SAF\n
+        Última terça-feira do mês - Reunião Plenária.\n
         Reunião Departamental.\n
-        Eleição da nova diretória. (30/05/18).\n
         Dia das crianças. (participar apoiando a igreja e os demais departamentos).\n
         Inspirativa\n
-        Ensaio conjunto SAF. (primeira segunda feira de cada mês).\n
         \n
         Novembro\n
-        Vista da SAF. (segundo ou quarto sábado de cada mês).\n
-        Reunião Plenária. Última terça do mês.\n
+        10 - Congresso da Federação.\n
+        1ª segunda-feira de cada mês - Ensaio conjunto SAF.\n
+        2º ou 4º sábado de cada mês - Vista da SAF\n
+        Última terça-feira do mês - Reunião Plenária.\n
         Reunião Departamental.\n
-        Congresso da Federação. 10/11/18.\n
-        Ensaio conjunto SAF. (primeira segunda feira de cada mês).
     </string>
 
     <string name="pageBodySobre">
         Obrigado por usar nosso aplicativo para saber as informações sobre a programação de nossa igreja e de nossas sociedades.\n
         \n
-        Versão: 1.5.0\n
+        Versão: 1.5.3\n
         Desenvolvido pela Equipe de Multimidia da IPBAL
     </string>
 
